@@ -1,0 +1,18 @@
+{
+  "name": "acme-slate-extension",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A worked example of a Folienbaukasten extension: a theme plus two slide components.",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "check": "node ../toolkit/bin/fbk-pack.ts check .",
+    "pack": "node ../toolkit/bin/fbk-pack.ts pack . --out dist",
+    "install:dev": "PPT_SETS_ROOT=${PPT_SETS_ROOT:-$PWD/.dev-sets} node ${FBK_APP:-../../ppt}/tools/install-set.ts dist/acme-1.0.0.fbkset",
+    "shot": "PPT_SETS_ROOT=${PPT_SETS_ROOT:-$PWD/.dev-sets} npm --prefix ${FBK_APP:-../../ppt} run shot -- --deck $PWD/templates/pricing-review.json --out $PWD/out"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}

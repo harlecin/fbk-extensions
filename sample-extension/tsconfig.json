@@ -1,0 +1,4 @@
+{
+  "extends": "../toolkit/tsconfig.extension.json",
+  "include": ["index.ts", "components.ts", "components", "env.d.ts"]
+}

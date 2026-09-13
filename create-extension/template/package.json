@@ -1,0 +1,19 @@
+{
+  "name": "__PKGNAME__",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "__NAME__, a Folienbaukasten extension.",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "check": "fbk-pack check .",
+    "pack": "fbk-pack pack . --out dist",
+    "publish:npm": "fbk-pack publish . --package __PKGNAME__ --out dist/npm"
+  },
+  "devDependencies": {
+    "@folienbaukasten/extension-toolkit": "^1.0.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.6.0"
+  },
+  "$comment": "The toolkit's MAJOR is the platform ABI this extension is built for: ^1.0.0 produces packs that install into an ABI-1 app. Moving to ^2 is a deliberate decision to target a newer app, not a routine dependency bump."
+}

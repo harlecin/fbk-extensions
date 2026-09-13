@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "__NAME__ Rollout Plan",
+    "description": "A four-stage rollout, animated — a Web Mode deck.",
+    "author": "__PUBLISHER__",
+    "date": "2026-09-01",
+    "footer": "__PUBLISHER__ — Rollout — Internal",
+    "componentSet": "__ID__",
+    "webMode": true
+  },
+  "slides": [
+    {
+      "layout": "title",
+      "props": {
+        "eyebrow": "Rollout",
+        "heading": "How the target model reaches every region",
+        "subheading": "Four stages, one pilot, and the decision that gates the rest",
+        "author": "__PUBLISHER__",
+        "date": "September 2026"
+      }
+    },
+    {
+      "layout": "component",
+      "props": {
+        "header": {
+          "title": "The pilot is the only stage that can still stop this",
+          "highlight": "can still stop this",
+          "kicker": "Rollout"
+        },
+        "component": {
+          "kind": "__ID__/flow",
+          "props": {
+            "stages": [
+              { "title": "Discovery", "duration": "2 weeks", "note": "Interviews and data pull" },
+              { "title": "Design", "duration": "4 weeks", "note": "Target operating model" },
+              { "title": "Pilot", "duration": "6 weeks", "note": "One region, end to end" },
+              { "title": "Rollout", "duration": "Q3–Q4", "note": "Remaining regions" }
+            ],
+            "focus": 3
+          }
+        }
+      }
+    }
+  ]
+}

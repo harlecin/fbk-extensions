@@ -1,0 +1,4 @@
+{
+  "extends": "@folienbaukasten/extension-toolkit/tsconfig.extension.json",
+  "include": ["index.ts", "components.ts", "components", "env.d.ts"]
+}

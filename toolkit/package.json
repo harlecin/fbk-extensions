@@ -1,0 +1,49 @@
+{
+  "name": "@folienbaukasten/extension-toolkit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Build, check and publish a Folienbaukasten extension — without a checkout of the app.",
+  "keywords": [
+    "folienbaukasten",
+    "folienbaukasten-toolkit",
+    "slides",
+    "presentation",
+    "extension"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/harlecin/fbk-extensions#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harlecin/fbk-extensions.git",
+    "directory": "toolkit"
+  },
+  "bugs": "https://github.com/harlecin/fbk-extensions/issues",
+  "bin": {
+    "fbk-pack": "dist/fbk-pack.js"
+  },
+  "files": [
+    "dist",
+    "abi",
+    "tsconfig.extension.json",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node build.ts",
+    "prepublishOnly": "node build.ts",
+    "smoke": "node smoke.ts"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "esbuild": "^0.28.2",
+    "jszip": "^3.10.1",
+    "ts-json-schema-generator": "^2.4.0",
+    "typescript": "^5.9.0"
+  },
+  "$comment": "The MAJOR version is the platform ABI this toolkit builds for — 1.x produces packs an ABI-1 app installs, 2.x an ABI-2 app. An author picks a major and has thereby picked which apps their extension installs into, which is a decision they can act on in a way that the word 'ABI' is not. The dependency versions are pinned to the ones the app's own packer used, so moving an extension onto this toolkit reproduces its previous pack byte for byte; esbuild is the one that matters, because a different minifier is a different set.js."
+}

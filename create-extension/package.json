@@ -1,0 +1,41 @@
+{
+  "name": "@folienbaukasten/create-extension",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scaffold a Folienbaukasten extension — npm create @folienbaukasten/extension",
+  "keywords": [
+    "folienbaukasten",
+    "create",
+    "scaffold",
+    "slides",
+    "presentation",
+    "extension"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/harlecin/fbk-extensions#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harlecin/fbk-extensions.git",
+    "directory": "create-extension"
+  },
+  "bugs": "https://github.com/harlecin/fbk-extensions/issues",
+  "bin": {
+    "create-extension": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "template",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node build.ts",
+    "prepublishOnly": "node build.ts"
+  },
+  "$comment": "Its own package rather than a subcommand of the toolkit, because `npm create <name>` resolves to the package `create-<name>` — scopes included — so this has to be @folienbaukasten/create-extension to be reachable by the one command anybody will actually try. It also stays small: the toolkit carries a 300 KB ABI bundle, and a scaffolder downloaded once and thrown away should not."
+}

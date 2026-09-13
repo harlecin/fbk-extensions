@@ -1,0 +1,57 @@
+{
+  "id": "acme",
+  "name": "Acme Slate",
+  "description": "Slate and teal, built for pricing and process reviews.",
+  "publisher": "Acme GmbH",
+  "production": true,
+  "version": "1.0.0",
+  "provides": ["theme", "components"],
+  "components": [
+    {
+      "kind": "acme/pricing-sheet",
+      "description": "Two to four pricing tiers side by side, one of them the recommendation. The slide that puts an offer in front of a buyer.",
+      "schemaType": "PricingSheetProps",
+      "glyph": "glyphs/pricing-sheet.svg",
+      "example": {
+        "tiers": [
+          {
+            "name": "Team",
+            "price": "€49 / user / month",
+            "note": "Up to 25 seats",
+            "features": ["Shared workspace", "Standard support", "Monthly reporting"]
+          },
+          {
+            "name": "Business",
+            "price": "€89 / user / month",
+            "note": "The tier most customers land on",
+            "features": ["Everything in Team", "SSO and audit log", "Named success manager", "Quarterly business review"],
+            "emphasis": true
+          },
+          {
+            "name": "Enterprise",
+            "price": "On request",
+            "note": "Regulated and multi-entity groups",
+            "features": ["Everything in Business", "Data residency", "Contractual SLA"]
+          }
+        ],
+        "footnote": "Annual commitment, billed up front. Prices exclude VAT."
+      }
+    },
+    {
+      "kind": "acme/flow",
+      "description": "Three to six process stages as an animated arrow chain, with one stage lit. Web Mode only.",
+      "schemaType": "FlowProps",
+      "glyph": "glyphs/flow.svg",
+      "webOnly": true,
+      "example": {
+        "stages": [
+          { "title": "Discovery", "duration": "2 weeks", "note": "Interviews and data pull" },
+          { "title": "Design", "duration": "4 weeks", "note": "Target operating model" },
+          { "title": "Pilot", "duration": "6 weeks", "note": "One region, end to end" },
+          { "title": "Rollout", "duration": "Q3–Q4", "note": "Remaining regions" }
+        ],
+        "focus": 3
+      }
+    }
+  ]
+}

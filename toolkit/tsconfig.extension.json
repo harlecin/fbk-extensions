@@ -1,0 +1,17 @@
+{
+  "$comment": "Extended by every extension's tsconfig.json. The platform mapping points at the ABI bundle's declarations, so an extension typechecks against the published surface rather than against a path into the app's source tree.",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@folienbaukasten/platform": ["./abi/types/sets/platform.d.ts"]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90">
+  <!-- Acme Slate · acme/pricing-sheet: three columns, the middle one the
+       recommendation. Drawn in the app's placeholder palette (#ACCENT,
+       #MUTED, #SURFACE, #BG) so the components view paints it in whatever
+       colours the editor is wearing. -->
+  <rect x="14" y="18" width="38" height="58" rx="2" fill="#SURFACE"/>
+  <rect x="61" y="12" width="38" height="64" rx="2" fill="#ACCENT" opacity="0.16"/>
+  <rect x="108" y="18" width="38" height="58" rx="2" fill="#SURFACE"/>
+  <rect x="14" y="18" width="38" height="4" rx="1" fill="#MUTED"/>
+  <rect x="61" y="12" width="38" height="5" rx="1" fill="#ACCENT"/>
+  <rect x="108" y="18" width="38" height="4" rx="1" fill="#MUTED"/>
+  <g fill="#MUTED" opacity="0.75">
+    <rect x="20" y="30" width="20" height="6" rx="1"/>
+    <rect x="114" y="30" width="20" height="6" rx="1"/>
+  </g>
+  <rect x="67" y="25" width="24" height="7" rx="1" fill="#ACCENT"/>
+  <g fill="#MUTED" opacity="0.4">
+    <rect x="20" y="42" width="26" height="3" rx="1.5"/>
+    <rect x="20" y="49" width="22" height="3" rx="1.5"/>
+    <rect x="20" y="56" width="25" height="3" rx="1.5"/>
+    <rect x="67" y="39" width="26" height="3" rx="1.5"/>
+    <rect x="67" y="46" width="23" height="3" rx="1.5"/>
+    <rect x="67" y="53" width="26" height="3" rx="1.5"/>
+    <rect x="67" y="60" width="20" height="3" rx="1.5"/>
+    <rect x="114" y="42" width="24" height="3" rx="1.5"/>
+    <rect x="114" y="49" width="26" height="3" rx="1.5"/>
+    <rect x="114" y="56" width="21" height="3" rx="1.5"/>
+  </g>
+  <rect x="14" y="82" width="60" height="3" rx="1.5" fill="#BG"/>
+</svg>

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+out/
+.DS_Store
+*.pem
+
+# The sample extension's throwaway install root (npm run install:dev)
+.dev-sets/

@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Acme Rollout Plan",
+    "description": "A four-stage rollout, animated — a Web Mode deck.",
+    "author": "Acme GmbH",
+    "date": "2026-09-01",
+    "footer": "Acme GmbH — Rollout — Internal",
+    "componentSet": "acme",
+    "webMode": true
+  },
+  "slides": [
+    {
+      "layout": "title",
+      "props": {
+        "eyebrow": "Rollout",
+        "heading": "How the target model reaches every region",
+        "subheading": "Four stages, one pilot, and the decision that gates the rest",
+        "author": "Acme GmbH",
+        "date": "September 2026"
+      }
+    },
+    {
+      "layout": "component",
+      "props": {
+        "header": {
+          "title": "The pilot is the only stage that can still stop this",
+          "highlight": "can still stop this",
+          "kicker": "Rollout"
+        },
+        "component": {
+          "kind": "acme/flow",
+          "props": {
+            "stages": [
+              { "title": "Discovery", "duration": "2 weeks", "note": "Interviews and data pull" },
+              { "title": "Design", "duration": "4 weeks", "note": "Target operating model" },
+              { "title": "Pilot", "duration": "6 weeks", "note": "One region, end to end" },
+              { "title": "Rollout", "duration": "Q3–Q4", "note": "Remaining regions" }
+            ],
+            "focus": 3
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "__NAME__ Pricing Review",
+    "description": "A three-tier offer with the recommendation carried through to the ask.",
+    "author": "__PUBLISHER__",
+    "date": "2026-09-01",
+    "footer": "__PUBLISHER__ — Commercial review — Confidential",
+    "componentSet": "__ID__"
+  },
+  "slides": [
+    {
+      "layout": "title",
+      "props": {
+        "eyebrow": "Commercial review",
+        "heading": "What we should charge for it",
+        "subheading": "Three tiers, one recommendation, and what has to be true for it to hold",
+        "chips": ["Three tiers", "One recommendation", "Effective Q1"],
+        "author": "__PUBLISHER__",
+        "date": "September 2026"
+      }
+    },
+    {
+      "layout": "agenda",
+      "props": {
+        "header": { "kicker": "Agenda", "title": "Three questions decide the price list" },
+        "items": [
+          { "title": "What we offer", "note": "The three tiers as a buyer sees them" },
+          { "title": "Why the middle one", "note": "Where the margin and the volume actually are" },
+          { "title": "What follows", "note": "Migration for the seats already on the old list" }
+        ]
+      }
+    },
+    {
+      "layout": "component",
+      "props": {
+        "header": {
+          "title": "Business is the tier that pays back in month four",
+          "highlight": "pays back in month four",
+          "subtitle": "Team wins the trial, Enterprise wins the tender — Business is what we sell"
+        },
+        "component": {
+          "kind": "__ID__/pricing-sheet",
+          "props": {
+            "tiers": [
+              {
+                "name": "Team",
+                "price": "€49 / user / month",
+                "note": "Up to 25 seats",
+                "features": ["Shared workspace", "Standard support", "Monthly reporting"]
+              },
+              {
+                "name": "Business",
+                "price": "€89 / user / month",
+                "note": "The tier most customers land on",
+                "features": [
+                  "Everything in Team",
+                  "SSO and audit log",
+                  "Named success manager",
+                  "Quarterly business review"
+                ],
+                "emphasis": true
+              },
+              {
+                "name": "Enterprise",
+                "price": "On request",
+                "note": "Regulated and multi-entity groups",
+                "features": ["Everything in Business", "Data residency", "Contractual SLA"]
+              }
+            ],
+            "footnote": "Annual commitment, billed up front. Prices exclude VAT."
+          }
+        },
+        "source": "__NAME__ commercial model, August 2026"
+      }
+    },
+    {
+      "layout": "two-block",
+      "props": {
+        "header": {
+          "title": "The middle tier is where the margin and the volume meet",
+          "kicker": "Why Business"
+        },
+        "left": {
+          "title": "What the numbers say",
+          "body": "Business carries the gross margin of Enterprise at the sales cost of Team.",
+          "bullets": [
+            "62% of trials that convert land here",
+            "Payback in 3.8 months at current CAC",
+            "Churn 4 points below Team"
+          ]
+        },
+        "right": {
+          "title": "What has to stay true",
+          "body": "The tier only holds if the two features buyers name in the trial stay inside it.",
+          "bullets": [
+            "SSO does not move up to Enterprise",
+            "The success manager stays named, not pooled"
+          ],
+          "variant": "callout"
+        },
+        "finding": {
+          "label": "Recommendation",
+          "text": "Publish the three tiers as they stand and move existing seats at renewal, not before."
+        }
+      }
+    }
+  ]
+}
