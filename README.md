@@ -1,5 +1,5 @@
 <div align="center">
- <img src="https://github.com/harlecin/fbk-extensions/assets/folienbaukasten-logo.png" width="250" height="250">
+ <img src="https://github.com/harlecin/fbk-extensions/blob/main/assets/folienbaukasten-logo.png" width="250" height="250">
  <p><strong>Develop Folien Baukasten Extensions</strong></p>
 </div>
 
